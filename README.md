@@ -1,5 +1,6 @@
 # Astro
-This is a simple Python script that tracks the asteroids near the earth and display all the information about them.
+This is a simple Python script that tracks the asteroids near the earth and displays all the information about them.
+
 
 ![astro1-Screenshot 2023-07-07 172012](https://github.com/SinghIsWriting/astro/assets/122283853/73937e86-dd04-4c37-a899-a58e467fe522)
 
@@ -20,13 +21,15 @@ This is a simple Python script that tracks the asteroids near the earth and disp
 8. python3 main.py
 9. Follow the prompts to enter the given options.
 
+
 ![astro2-Screenshot 2023-07-07 172305](https://github.com/SinghIsWriting/astro/assets/122283853/93bd8ae7-cdac-4915-874b-10e1ab1ed271)
+
 
 
 10. The program will display the number of asteroids and details.
 
 ## Usage
-1. The program prompts the user to enter the two options to see the asteroid details of the current day or in between a time interval. If you choose first options then extract the current date automaticall and proivdes to the requestin url.
+1. The program prompts the user to enter the two options to see the asteroid details of the current day or in between a time interval. If you choose first options then this script extracts the current date automatically and provides to the requesting url.
 2. It then requests to api.nasa.gov/ website using requests python library and scraps the data.
 3. The program displays the found information about the asteroids.
 
