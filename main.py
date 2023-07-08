@@ -5,6 +5,7 @@ from datetime import datetime    # datetime module to get current date
 import requests   # request library for scrapping the data from NASA website
 from gtts import gTTS   # Google-Text-To-Speach library for saving text as audio file
 from playsound import playsound   # playsound module for playing audio file
+from time import sleep
 
 # Include your NASA open API key here, visit https://api.nasa.gov/
 API_KEY = "XXXXXXXXXXXXXXXXXXXXXXX"
@@ -51,6 +52,7 @@ def astro(start_date, end_date, comment):
 				f"{Fore.CYAN}\n\t Approaching to the Earth :", (aptime))
 			print()
 			danger.append(str(body['close_approach_data'][0]['miss_distance']['miles']))
+			sleep(1/2)
 		if comment == "today":
 			toSpeak = f"There are {total_astroids} asteoids near the Earth {comment}. "+f"The closest astroid approaching to earth is {round(float(min(danger)), 3)} miles away from our earth."
 			print(f"{Fore.RED}The Closest approaching astroid is",min(danger),f"{Fore.RED}miles away from earth.")
