@@ -43,3 +43,6 @@ Contributions to this repository are welcome. If you would like to improve code,
 5. Commit your changes with a descriptive commit message.
 6. Push your changes to your forked repository.
 7. Create a pull request detailing your changes.
+
+## License
+This project is licensed under the MIT License - see the [MIT License](LICENSE) file for details.
